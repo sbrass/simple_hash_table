@@ -2,6 +2,9 @@ project('hash_table', ['c', 'fortran'],
   version : '0.1',
   default_options : ['warning_level=3'])
 
+c_compiler = meson.get_compiler('c')
+c_compiler.has_header('stddef.h')
+
 hash_table = library('hash_table', [
                       'hash.c',
                       'hash.f90',
