@@ -1,0 +1,7 @@
+* Build
+
+  #+begin_src shell
+    meson <build_dir>
+    ninja -C <build_dir>
+    ninja -C <build_dir> test
+  #+end_src
